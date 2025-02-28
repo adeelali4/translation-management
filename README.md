@@ -14,23 +14,23 @@ Run the project
 - Run maven command: mvn clean package
 
 Swagger
-http://localhost:9000/swagger-ui/index.html
+- http://localhost:9000/swagger-ui/index.html
 
 Design Choice
-The project follows a layered architecture with a clear separation of concerns, making it maintainable, scalable, and modular. Encourages SOLID principles and clean architecture.
+- The project follows a layered architecture with a clear separation of concerns, making it maintainable, scalable, and modular. Encourages SOLID principles and clean architecture.
 
 Design Overview
-Controller Layer
-- handles incoming request
+- Controller Layer
+  - handles incoming request
 
-Service Layer
-- Contains business logic
+- Service Layer
+  - Contains business logic
 
-Persistence Layer
-- Entity: defines entities, representing database tables.
-- Repository: database layer, to handle database calls.
+- Persistence Layer
+  - Entity: defines entities, representing database tables.
+  - Repository: database layer, to handle database calls.
 
-Mapper Layer
-- Convert entities to responseDTO
-- Convert requestDTO to entities
-- Keeps the service layer clean
+- Mapper Layer
+  - Convert entities to responseDTO
+  - Convert requestDTO to entities
+  - Keeps the service layer clean
